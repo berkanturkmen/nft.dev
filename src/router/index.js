@@ -1,14 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Welcome from '../views/Welcome.vue'
+import Assets from './Assets'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
-        {
-            path: '/',
-            name: 'Welcome',
-            component: Welcome,
-        },
+        ...Assets,
     ],
 })
 
