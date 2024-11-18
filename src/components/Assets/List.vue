@@ -8,7 +8,7 @@
 </script>
 
 <template>
-    <div v-for="(asset, index) in assets" :key="index" class="shadow rounded overflow-hidden relative group pb-[40px]">
+    <div v-for="(asset, index) in assets" :key="index" class="shadow rounded overflow-hidden relative group pb-[40px] mb-4 md:mb-0">
         <div v-if="asset.type === 'image'">
             <img :src="asset.media_url" class="w-full h-full object-cover" />
         </div>
